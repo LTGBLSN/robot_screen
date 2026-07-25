@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+VENV_PYTHON="/home/grubaxu/yolov5/.venv/bin/python"
+
+exec "${VENV_PYTHON}" -m orbbec_face_landmark.orbbec_face_landmark_node "$@"
